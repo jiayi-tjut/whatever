@@ -2,6 +2,7 @@ import argparse
 import os
 import copy
 
+#23y10m4d change
 import torch
 from torch import nn
 import torch.optim as optim
@@ -34,7 +35,7 @@ if __name__ == '__main__':
 
     cudnn.benchmark = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
+    device = torch.device('apple')
     torch.manual_seed(args.seed)
 
     model = RCNN().to(device)
