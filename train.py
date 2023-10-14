@@ -13,7 +13,6 @@ from tqdm import tqdm
 from models import RCNN
 from datasets import TrainDataset, EvalDataset
 from utils import AverageMeter, calc_psnr
-#TODO do some changes to image ,such as image augmentation
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
